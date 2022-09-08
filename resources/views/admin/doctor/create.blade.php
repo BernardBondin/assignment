@@ -25,9 +25,18 @@
                             <input type="text" name="surname" class="form-control">
                             @error('surname') <small class="text-danger">{{$message}}</small>@enderror
                         </div>
-                        <div class="col-md-6 mb-3">
+                        <div class="col-md-3 mb-3">
                             <label>Area</label>
-                            <input type="text" name="area" class="form-control">
+                            {{-- <input type="text" name="area" class="form-control"> --}}
+                            <select name="area" class="form-control">
+                                <option value=""> --Select Area-- </option>
+                                <option value="North"> North </option>
+                                <option value="East"> East </option>
+                                <option value="South"> South </option>
+                                <option value="West"> West </option>
+                                <option value="Gozo"> Gozo </option>
+                            </select>
+
                             @error('area') <small class="text-danger">{{$message}}</small>@enderror
                         </div>
                         <div class="col-md-12 mb-3">

@@ -21,7 +21,9 @@ class DoctorController extends Controller
         $doctor = new Doctor;
         $doctor->name = $validatedData['name'];
         $doctor->surname = $validatedData['surname'];
-        $doctor->area = $validatedData['area'];
+        // $doctor->area = $validatedData['area'];
+        $doctor->area = $_POST['area'];
+
         $doctor->save();
 
         return redirect('admin/doctor')->with('message', 'Doctor Added Successfully!');
@@ -38,7 +40,9 @@ class DoctorController extends Controller
         
         $doctor->name = $validatedData['name'];
         $doctor->surname = $validatedData['surname'];
-        $doctor->area = $validatedData['area'];
+        // $doctor->area = $validatedData['area'];
+        $doctor->area = $_POST['area'];
+
         $doctor->update();
 
         return redirect('admin/doctor')->with('message', 'Doctor Edited Successfully!');

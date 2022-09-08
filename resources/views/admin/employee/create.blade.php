@@ -27,6 +27,12 @@
                             @enderror
                         </div>
                         <div class="col-md-6 mb-3">
+                            <label>Age</label>
+                            <input type="integer" name="age" class="form-control">
+                            @error('age') <small class="text-danger">{{ $message }} </small>
+                            @enderror
+                        </div>
+                        <div class="col-md-6 mb-3">
                             <label>Address</label>
                             <input type="text" name="address" class="form-control">
                             @error('address') <small class="text-danger">{{ $message }} </small>

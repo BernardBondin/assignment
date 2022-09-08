@@ -17,6 +17,7 @@ return new class extends Migration
             $table->id();
             $table->string('name');
             $table->string('surname');
+            $table->integer('age');
             $table->string('address');
             $table->string('locality');
             $table->string('area');

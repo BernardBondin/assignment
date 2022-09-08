@@ -54,6 +54,7 @@
                                 <td>{{ $doctor->name }}</td>
                                 <td>{{ $doctor->surname }}</td>
                                 <td>{{ $doctor->area }}</td>
+
                                 <td>
                                     <a href="{{ url('admin/doctor/'.$doctor->id.'/edit') }}" class="btn btn-sm btn-warning">Edit</a>
                                     <a href="#" wire:click="deleteDoctor({{$doctor->id}})" data-bs-toggle="modal" data-bs-target="#deleteModal" class="btn btn-sm btn-danger">Delete</a>

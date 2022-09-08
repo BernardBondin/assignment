@@ -21,6 +21,8 @@ class EmployeeController extends Controller
         
         $employee->name = $validatedData['name'];
         $employee->surname = $validatedData['surname'];
+        $employee->age = $validatedData['age'];
+
         $employee->address = $validatedData['address'];
         $employee->locality = $validatedData['locality'];
         $employee->area = $validatedData['area'];
@@ -41,6 +43,8 @@ class EmployeeController extends Controller
 
         $employee->name = $validatedData['name'];
         $employee->surname = $validatedData['surname'];
+        $employee->age = $validatedData['age'];
+
         $employee->address = $validatedData['address'];
         $employee->locality = $validatedData['locality'];
         $employee->area = $validatedData['area'];

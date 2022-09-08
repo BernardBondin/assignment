@@ -41,12 +41,12 @@
                                 <th>ID</th>
                                 <th>Name</th>
                                 <th>Surname</th>
+                                <th>Age</th>
                                 <th>Address</th>
                                 <th>Locality</th>
                                 <th>Area</th>
                                 <th>Doctor</th>
                                 <th>Action</th>
-
                             </tr>
                         </thead>
                         <tbody>
@@ -57,6 +57,7 @@
                                 <td>{{ $employee->id }}</td>
                                 <td>{{ $employee->name }}</td>
                                 <td>{{ $employee->surname }}</td>
+                                <td>{{ $employee->age }}</td>
                                 <td>{{ $employee->address }}</td>
                                 <td>{{ $employee->locality }}</td>
                                 <td>{{ $employee->area }}</td>

@@ -32,6 +32,10 @@ class EmployeeFormRequest extends FormRequest
                 'required',
                 'string'
             ],
+            'age' => [
+                'required',
+                'integer'
+            ],
             'address' => [
                 'required',
                 'string'
